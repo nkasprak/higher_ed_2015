@@ -1,0 +1,180 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+    width:580px;
+    font-family:"proxima-nova",sans-serif;  
+    padding:0px;
+	margin:0px;
+}
+
+@media (max-width:579px) {
+	body {
+		width:320px;	
+	}
+}
+
+a {
+	color:#0081a4;	
+	text-decoration:none;
+}
+
+a:hover {
+	text-decoration:underline;	
+}
+
+#mapLinks a {
+	color:inherit;	
+}
+
+h2.maintitle {
+    font-size:36pt;
+    text-align:center;
+    padding:0px;
+    margin:0px;
+}
+
+#dataPicker {
+	font-weight:bold;
+	font-size:16px;	
+}
+
+#dataPicker > div {
+	display:inline-block;
+	margin-right:10px;
+	background-color:#fff;
+	padding:5px;
+	color:#aaa;
+	cursor:pointer;
+	position:relative;
+
+	
+	box-sizing:border-box;
+}
+
+#dataPicker > div:hover {
+	text-decoration:underline;
+}
+
+#dataPicker > div.selected {
+	color:#000;
+	border-bottom:0px;
+	background-color:#f2f2f2;
+	
+	
+}
+
+#mainMap {
+	background-color:#f2f2f2;
+	padding:20px;
+	padding-bottom:0px;
+	margin:0px;
+	border-top:1px solid #000;
+	border-bottom:1px solid #000;
+	position:relative;
+}
+
+#map {
+    width:100%;
+    font-family:"proxima-nova-condensed",sans-serif;   
+}
+#map text, #map textpath {
+    cursor:pointer;   
+}
+.popup {
+    background-color:#fff;
+    border:1px solid #000;
+}
+.popup h4 {
+    margin:0px;padding:0px;   
+}
+.popup p {
+    margin-bottom:0px;padding-bottom:0px;   
+}
+#yearPicker {
+    font-weight:bold;
+    font-size:14pt;
+   
+    width:100%;
+}
+
+#yearPicker div {
+    display:inline-block;
+    padding-right:2pt;
+	padding-left:0pt;
+    color:#aaa;
+    cursor:pointer;
+}
+
+#yearPicker div.selected {
+    color:#000;   
+}
+
+#yearPicker div:hover {
+    text-decoration:underline;
+}
+
+#mapTitle {
+	font-size:18pt;
+	font-weight:bold;
+	margin-bottom:15px;	
+}
+
+#mapSubtitle {
+	font-size:14pt;	
+}
+
+#mapNotes {
+	font-size:10pt;
+	color:#666666;	
+}
+
+#mapLinks {
+	font-size:12pt;
+	color:#666666;	
+	
+}
+
+#mapLinks span.linktext {
+	line-height:24pt;
+	position:relative;
+	top:-4pt;
+	left:4pt;
+}
+
+#mapLinks img {
+	display:inline;	
+}
+
+#cbppCredit {
+	text-align:right;
+	color:#999999;	
+	font-size:10pt;
+	margin-top:2px;
+}
+
+#embedBox {
+	display:none;
+	position:absolute;
+	bottom:30px;
+	left:5%;
+	right:5%;
+	width:auto;
+	background-color:#fff;
+	padding:20px;
+	border:1px solid #000;	
+}
+
+#embedCode {
+	font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+	font-size:10pt;	
+	color:#666666;
+	padding-top:10px;
+	word-wrap: break-word;
+}
+
+#embedCode textArea {
+	width:100%;
+	height:100px;
+	resize:none;	
+}
