@@ -50,17 +50,17 @@ define(["map", "highered_data", "jquery", "stateNames"], function (Map, highered
             $(this).remove();
         });
 		
-		if (dataset === 2) {
-			$("#yearPicker div[data-year=2014]").hide();
+		/*if (dataset === 2) {
+			$("#yearPicker .toHide").hide();
 		} else {
-			$("#yearPicker div[data-year=2014]").show();
+			$("#yearPicker .toHide").show();
 		}
 		
 		if (year === 2014) {
 			$("#dataPicker div[data-dataset=2]").hide();
 		} else {
 			$("#dataPicker div[data-dataset=2]").show();
-		}
+		}*/
         
         //assign the new data to the map
         m.data = highered_data[year];
@@ -94,10 +94,10 @@ define(["map", "highered_data", "jquery", "stateNames"], function (Map, highered
     }
     
     /*Runs when the user clicks on the year picker*/
-    $("#yearPicker div").click(function () {
+    $("#yearPicker div.year").click(function () {
         
         //unselect all the year clickers
-        $("#yearPicker div").removeClass("selected");
+        $("#yearPicker div.year").removeClass("selected");
         
         //get the year from the clicked div
         var year = $(this).data("year");
@@ -162,9 +162,9 @@ define(["map", "highered_data", "jquery", "stateNames"], function (Map, highered
             var str = "<h4>" + stateNames[state] + ", " + highered_map.startYear + " - 2015</h4>";
             str += "<p>Tuition is " + formatNumber(data[1]) + "<br />";
             str += "State funding is " + formatNumber(data[0]);
-			if (highered_map.startYear !== 2014) {
+			/*if (highered_map.startYear !== 2014) {
 				str += "<br />Enrollment is " + formatNumber(data[2]);
-			}
+			}*/
             str += "</p>";
             return str;
         },
