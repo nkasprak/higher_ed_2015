@@ -92,7 +92,7 @@ h2.maintitle {
     margin-bottom:0px;padding-bottom:0px;   
 }
 #yearPicker {
-    font-weight:bold;
+    font-weight:400;
     font-size:13pt;
     text-align:center;
     width:100%;
@@ -124,6 +124,7 @@ h2.maintitle {
 
 #mapSubtitle {
 	font-size:15pt;	
+	font-weight:400;
 }
 
 #mapNotes {

@@ -43,3 +43,5 @@ Temporary Items
 .apdisk
 dwsync.xml
 *.xlsx
+r.js
+build/*
