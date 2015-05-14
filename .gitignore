@@ -41,7 +41,8 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
 dwsync.xml
 *.xlsx
 r.js
-build/*
+higher_ed_2015_build/*

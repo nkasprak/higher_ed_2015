@@ -37,9 +37,9 @@ define(["map", "highered_data", "jquery", "stateNames"], function (Map, highered
 		dataset = +dataset;
 		
 		$("#mapTitle span.dataset").html([
-			"State Spending",
-			"Tuition",
-			"Enrollment"
+			"state spending",
+			"tuition",
+			"enrollment"
 		][dataset]);
 		
         //short reference to map object
